@@ -1,0 +1,15 @@
+{
+  "$schema": "https://cursor.com/schemas/environment.schema.json",
+  "name": "Cursor Agent with Logging and Network Restrictions",
+  "description": "A secure Cursor background agent with comprehensive logging and network restrictions",
+  "user": "agent",
+  "install": ".cursor/setup-logging.sh && .cursor/setup-network.sh && .cursor/setup-central-logging.sh && .cursor/start-services.sh",
+  "start": "echo 'Starting agent with logging and monitoring...' && /usr/local/bin/startup.sh",
+  "terminals": [
+    {
+      "name": "Logs",
+      "command": "tail -f /var/log/agent/commands.log",
+      "description": "View agent command logs"
+    }
+  ]
+}

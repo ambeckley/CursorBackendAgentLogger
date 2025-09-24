@@ -1,0 +1,31 @@
+# Network Allowlist for Cursor Background Agent
+# Add domains/IPs that the agent should be able to access
+# Format: domain.com or IP address
+# tbh this file might not be able to be used depending on copying ability which is why setup-network.sh recreates this file
+
+# Essential services domains
+github.com
+api.github.com
+raw.githubusercontent.com
+pypi.org
+files.pythonhosted.org
+registry.npmjs.org
+registry.yarnpkg.com
+nodejs.org
+python.org
+ubuntu.com
+archive.ubuntu.com
+security.ubuntu.com
+ppa.launchpad.net
+
+# Development tool domains
+npmjs.org
+yarnpkg.com
+bower.io
+composer.org
+packagist.org
+
+# Add your specific allowlisted domains here
+# example.com
+# api.example.com
+# your-custom-domain.com
